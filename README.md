@@ -83,11 +83,7 @@ python manage.py runserver
 #### For Professor verification, admin will need to manually add professor to Professor group once they create a new account    
 ##
 ##
-#### Backend part of the site was developed by:
-* [@rishank-shah](https://github.com/rishank-shah)
+#### Backend part of the site was developed by:M.Pratik Kumar
 ##
 
-#### Frontend part of the site was developed by:
-* [@asaad2121](https://github.com/asaad2121)
-* [@buvani08](https://github.com/buvani08)
-* [@xUnholyRealmx](https://github.com/xUnholyRealmx)
+
