@@ -1,0 +1,302 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Webpage Design</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    width: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(logbg.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.navbar{
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+    color: #F2AA4CFF;
+}
+
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+
+.logo{
+    color: #b2c3c8;
+    font-size: 30px;
+    font-weight: 800;
+    font-family: Poppins;
+    padding-left: 20px;
+    float: left;
+    padding-top: 10px;
+    margin-top: 5px
+}
+
+.menu{
+    width: 400px;
+    float: left;
+    height: 70px;
+}
+
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li{
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 24px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.2s ease-in-out;
+}
+
+ul li a:hover{
+    color: #155757;
+}
+
+.content{
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    color: #fff;
+    position: relative;
+}
+
+.content .par{
+    padding-left: 20px;
+    padding-bottom: 25px;
+    font-family: Arial;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+}
+
+.content h1{
+    font-family: 'Times New Roman';
+    font-size: 50px;
+    padding-left: 20px;
+    margin-top: 9%;
+    letter-spacing: 2px;
+}
+
+.content .cn{
+    width: 160px;
+    height: 40px;
+    background: #a1acac;
+    border: none;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s ease;
+    
+}
+
+.content .cn a{
+    text-decoration: none;
+    color: #000;
+    transition: .2s ease;
+}
+
+.cn:hover{
+    background-color: #fff;
+}
+
+.content span{
+    color: #155757;
+    font-size: 65px
+}
+
+.form{
+    width: 250px;
+    height: 420px;
+    background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
+    position: absolute;
+    top: -20px;
+    left: 870px;
+    transform: translate(0%,-5%);
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.form h2{
+    width: 220px;
+    font-family: sans-serif;
+    text-align: center;
+    color: #155757;
+    font-size: 22px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 2px;
+    padding: 8px;
+}
+
+.form input{
+    width: 240px;
+    height: 35px;
+    background: white;
+    border-bottom: 1px solid #155757;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: black;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-family: sans-serif;
+    padding-left: 5px;
+    border-radius: 10px;
+}
+
+.form input:focus{
+    outline: none;
+}
+
+::placeholder{
+    color: black;
+    font-family: Arial;
+}
+
+.btnn{
+    width: 240px;
+    height: 40px;
+    background: #155757;
+    border: none;
+    margin-top: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.4s ease;
+}
+.btnn:hover{
+    background: #fff;
+    color: #155757;
+}
+.btnn a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+.form .link{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    padding-top: 20px;
+    text-align: center;
+}
+.form .link a{
+    text-decoration: none;
+    color: #155757;
+}
+.liw{
+    padding-top: 15px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.icons a{
+    text-decoration: none;
+    color: #fff;
+}
+.icons ion-icon{
+    color: #fff;
+    font-size: 30px;
+    padding-left: 14px;
+    padding-top: 5px;
+    transition: 0.3s ease;
+}
+.icons ion-icon:hover{
+    color: #155757;
+}
+    </style>
+</head>
+{% comment %} <body style="" background="{% static 'img/logbg.jpg' %}"> {% endcomment %}
+    <body style="background:#101820FF" >
+
+    <div class="main">
+        <div class="navbar" style="background:">
+            <div class="icon">
+                <h2 class="logo">Quizify</h2>
+            </div>
+
+            {% comment %} <div class="menu">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                </ul>
+            </div> {% endcomment %}
+            
+        </div>
+
+        <div class="content">
+            <img src="{% static 'img/img1.png' %}">
+            <h2>WE GROUP 7 <br><span style="color: #fff">Take the quiz!</span> <br>Hope You Have fun.</h2>            
+            {% comment %} <p class="par">Want to learn something new today. Let's examine your patience and skills at the same time.  
+                <br> Silicon Institute of Technology, Silicon Hills, Patia, Bhubaneswar - 751024, ODISHA
+                <br> Contact: +91-8260333609 www.silicon.ac.in </p> {% endcomment %}
+
+                <button style="margin-top:1cm" class="cn"><a href="{% url 'register'%}">JOIN US</a></button>
+
+                <div class="form" style="background:#001D6E;margin-top:4cm">
+                    <h2>Login Here</h2>
+                    <form action="{% url 'login' %}" method="post">
+                        {% csrf_token %}
+
+                        {% include 'partials/_messages.html' %}
+
+                        <div class="form-group">
+
+                            <input type="text" name="username" id="usernamefield" value="{{fieldValues.username}}"
+                                placeholder="Username" class="form-control form-control-sm">
+                        </div>
+
+                        <div class="form-group">
+
+                            <input type="password" name="password" id="passwordfield" placeholder="Password"
+                                class="form-control form-control-sm">
+                        </div>
+
+                        <input type="submit" value="Login" class="btn btn-block"
+                            style="border-color:#745959; color:white;background:#82DBD8;"/>
+
+                    </form>
+                    <p class="link">Don't have an account<br>
+                    <a style="color:#82DBD8" href="{% url 'register'%}">Sign up </a> here</a></p>
+					<a style="color:#82DBD8;margin-left:1.5cm" href="{% url 'password_reset'%}">Forget Password </a>?</a></p>
+                    <p class="liw">Log in with</p>
+
+                    <div class="icons">
+                        <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-google"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-skype"></ion-icon></a>
+                    </div>
+
+                </div>
+                    </div>    
+                </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+</html>
