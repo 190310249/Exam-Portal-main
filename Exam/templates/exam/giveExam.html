@@ -16,13 +16,13 @@
       }
   </style>
     <div class="container">
-        <h4> Exam Name  - {{ exam.name }}</h4>
-        <h4> Professor - {{ exam.professor }}</h4>
-        <h4> Paper Name  - {{ exam.question_paper.qPaperTitle }}</h4>
-        <h5>
+        <h4 style="text-align:center;"> Exam Name  - {{ exam.name }}</h4>
+        <h4 style="text-align:center;"> Professor - {{ exam.professor }}</h4>
+        <h4 style="text-align:center;"> Paper Name  - {{ exam.question_paper.qPaperTitle }}</h4>
+        <h5 style="text-align:center;">
             This Exam is of  {{ exam.total_marks }} marks
         </h5>
-        <h5 style="font-family:Poppins;">
+        <h5 style="font-family:Poppins;text-align:center;">
             <a >Time left : <a id="dmin">{{ min }}</a> mins <a id="dsec">{{ sec }}</a> seconds</a>
         </h5>
         <form method="POST" id="examform">

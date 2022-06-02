@@ -90,5 +90,15 @@
         <h2 class="card-title">Settings</h2>
       </div>      
     </div>
+  </a>
+  <a style="margin-top:2cm" href="{% url 'view_students_attendance' %}">
+    <div class="cards">      
+      <div class="card-body">
+        <img class="card-img-top" style="width:100%;height:100%" src="{% static 'img/attend.png' %}"/>
+        {% comment %} <h1>Settings</h1> {% endcomment %}
+        <h2 class="card-title">Attendance</h2>
+      </div>      
+    </div>
+  </a>
 </div>
 {% endblock %}
